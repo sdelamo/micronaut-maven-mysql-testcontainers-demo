@@ -5,7 +5,7 @@ import io.micronaut.test.support.TestPropertyProvider;
 
 import java.util.Map;
 
-public interface MySqlTestPropertyProvider extends TestPropertyProvider {
+public interface DatabaseTestPropertyProvider extends TestPropertyProvider {
     @Override
     default @NonNull Map<String, String> getProperties() {
         return MySQL.getProperties();
